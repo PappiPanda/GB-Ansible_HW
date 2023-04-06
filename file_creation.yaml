@@ -1,0 +1,9 @@
+---
+- name: empty file creation
+  hosts: localhost
+  tasks:
+  - name: create file
+    file:
+      path: "/home/dmitry/test_file.txt"
+      state: touch
+    become: yes
